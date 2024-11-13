@@ -1,0 +1,2 @@
+# investmentsTab
+Investments table
