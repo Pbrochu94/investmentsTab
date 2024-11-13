@@ -1,4 +1,7 @@
-
+html
+{
+    user-select: none;
+}
 table
 {
     border-radius: 4px;
@@ -6,7 +9,7 @@ table
     border-spacing: 0;
     padding:4px;
     background-color: blueviolet;
-    width:800px
+    width:1000px
 }
 
 td,th
@@ -14,6 +17,7 @@ td,th
     border:1px solid rgb(196, 194, 194);
     background-color: rgb(55, 43, 226);
     padding: 4px;
+    height: 20px;;
 }
 
 .addButton
@@ -33,9 +37,21 @@ td,th
 
 .buttonWrapper
 {
-    width:800px;
+    width:1000px;
     display:flex;
     justify-content: end;
 }
 
 
+td
+{
+
+}
+
+.editSymbol
+{
+    visibility: hidden;
+    display:flex;
+    justify-content: end;
+    pointer-events: none;/*stops the inner div from being hovered*/
+}
