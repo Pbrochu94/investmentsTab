@@ -17,7 +17,9 @@ td,th
     border:1px solid rgb(196, 194, 194);
     background-color: rgb(55, 43, 226);
     padding: 4px;
-    height: 20px;;
+    height: 20px;
+    overflow: hidden; /* Prevent cell content from overflowing */
+    margin: 0%;
 }
 
 .addButton
@@ -46,15 +48,40 @@ td,th
 td div
 {
     display:flex;
-    justify-content:end;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+td
+{
+    overflow: hidden; /* Prevent cell content from overflowing */
 }
 
 .editSymbol
 {
     opacity: 0%;
+    padding: 0%;
+    height:20px;
+    margin: 0%;
 }
 
 .editSymbol:hover
 {
     opacity: 100%;
+}
+
+
+input[type="text"]
+{
+    box-sizing: border-box;
+    min-width: 2px;
+    max-width: 1600px;      /* Prevent input from expanding beyond cell */
+    margin: 0%;
+    padding: 0%;
+}
+
+div .editSymbol
+{
+    width:20px;
 }
