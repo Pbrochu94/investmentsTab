@@ -43,15 +43,18 @@ td,th
 }
 
 
-td
+td div
 {
-
+    display:flex;
+    justify-content:end;
 }
 
 .editSymbol
 {
-    visibility: hidden;
-    display:flex;
-    justify-content: end;
-    pointer-events: none;/*stops the inner div from being hovered*/
+    opacity: 0%;
+}
+
+.editSymbol:hover
+{
+    opacity: 100%;
 }

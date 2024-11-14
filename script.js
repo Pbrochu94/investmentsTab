@@ -13,23 +13,11 @@ function addRow()
     for(let i = 0; i< 9; i++)
     {
         let newCell = newRow.insertCell()
-        let editSymbol = document.createElement("div")
+        let editSymbol = document.createElement("button")
         editSymbol.setAttribute("class", "editSymbol")
         editSymbol.innerText = "Edit"
-        newCell.append(editSymbol)
-        newCell.addEventListener("mouseover", editIconAppear)
-        newCell.addEventListener("mouseout", editIconDisappear)
+        let newCellDivWrapper = document.createElement("div")
+        newCell.append(newCellDivWrapper)
+        newCellDivWrapper.append(editSymbol)
     }
-}
-
-function editIconAppear(event)/*function that change the visibility to visivble of the inside div of the cell*/
-{
-    let editSymbol = event.target.querySelector(".editSymbol")
-    editSymbol.style.visibility = "visible";
-}
-
-function editIconDisappear(event)/*function that change the visibility to hidden of the inside div of the cell*/
-{
-    let editSymbol = event.target.querySelector(".editSymbol")
-    editSymbol.style.visibility = "hidden";
 }
